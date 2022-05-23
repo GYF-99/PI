@@ -1,0 +1,64 @@
+@import "var.scss";
+@import "global.scss";
+
+.mainup{
+    background-color: gray;
+    height: 600px;
+    width: 300px;
+    float: left;
+    display: inline-block;
+    position: absolute;
+}
+.pro-title{
+   margin-left: 20px;
+   font-size: 20px;
+   line-height: 1.7;
+   font-family:'San Francisco Ul';
+   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+   border-radius: 4px;
+  
+}
+.pro-brand{
+    font-size: 14px;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    font-family:'San Francisco Ul';
+    border-radius: 4px;
+}
+.pro-price{
+    font-size: 18px;
+    color: #121a2a;
+    margin-left: 20px;
+    
+}
+.pro-size{
+    margin: 20px 20px 20px 45px;
+}
+// .el-radio-group:hover,
+// .el-radio-group:focus{
+//    color: white;
+// }
+  
+  .bottom {
+    margin-top: 13px;
+    line-height: 12px;
+  }
+
+  .image {
+    width: 100%;
+    display: block;
+  }
+
+  .clearfix:before,
+  .clearfix:after {
+      display: table;
+      content: "";
+  }
+  
+  .clearfix:after {
+      clear: both
+  }
+.pro-pattern{
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}

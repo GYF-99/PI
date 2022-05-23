@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+  </style>
+  <title>PaiMall</title>
+</head>
+
+<body >
+<script>
+  const list = ['a','bsd','st','yuy','8oi','rtgr','ewds','qwqsa','qwsasa','a','qq','q','q',2,3,4,5,6,7,8,9,0,2,3,4,5,6]
+  // const new_list = []
+  // let list_value = ''
+  // let i = 0
+
+  // 对数组进行随机排序
+  function shuffle(arr) {
+    var len = arr.length;
+    for (var i = 0; i < len - 1; i++) {
+      var index = parseInt(Math.random() * (len - i));
+      var temp = arr[index];
+      arr[index] = arr[len - i - 1];
+      arr[len - i - 1] = temp;
+    }
+    return arr;
+  }
+
+  // "热门推荐"中用于展示商品数据的数组
+  function randomNewList(list) {
+    let i = 0
+    let list_value = ''
+    let new_list = []
+    while (i<10){
+      shuffle(list)
+      list_value = ''
+      x=Math.random() * 10
+      list_value = list[Math.floor(x)]
+      new_list.push(list_value)
+      list.splice(Math.floor(x),1)
+      i = i + 1
+    }
+    return new_list
+  }
+
+  console.log(randomNewList(list))
+</script>
+</body>
+
+</html>
