@@ -1,8 +1,8 @@
 <template>
    <div class="rank-main">
      <el-row  :gutter="20">
-       <el-col :span="5" v-for="(o, index) in 4" :key="o">
-         <el-card :body-style="{ padding: '0px' }">
+       <el-col :span="4" v-for="(o, index) in 5" :key="o">
+         <el-card :body-style="{ padding: '0px' }" shadow="hover">
            <img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png" class="image">
            <div style="padding: 14px;">
              <label>商品名称</label>
@@ -15,8 +15,8 @@
        </el-col>
      </el-row>
      <el-row :gutter="20">
-       <el-col :span="5" v-for="(o, index) in 4" :key="o">
-         <el-card :body-style="{ padding: '0px' }">
+       <el-col :span="4" v-for="(o, index) in 5" :key="o">
+         <el-card :body-style="{ padding: '0px' }" shadow="hover">
            <img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png" class="image">
            <div style="padding: 14px;">
              <label>商品名称</label>
@@ -29,8 +29,8 @@
        </el-col>
      </el-row>
      <el-row :gutter="20">
-       <el-col :span="5" v-for="(o, index) in 4" :key="o">
-         <el-card :body-style="{ padding: '0px' }">
+       <el-col :span="4" v-for="(o, index) in 5" :key="o">
+         <el-card :body-style="{ padding: '0px' }" shadow="hover">
            <img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png" class="image">
            <div style="padding: 14px;">
              <label>商品名称</label>
@@ -58,8 +58,7 @@ export default {
 
 <style scoped>
 .rank-main{
-  background-color: gray;
-  height: 1000px;
+  height: auto;
   width: 1500px;
 }
 

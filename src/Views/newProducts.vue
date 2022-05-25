@@ -1,61 +1,39 @@
-<template lang="">
+<template>
     <div class="main-container">
         <div class="main-header">
             <a class="menu-link-main" href="#">新品推荐</a>
-            <div class="header-menu">
-                <router-link to="/trendfront" active-class="is-active">潮流前线</router-link>
-                <router-link to="/newLeaderboard" active-class="is-active">新品排行榜</router-link>
-                <!-- <router-link to="/singerlist" active-class="is-active">歌手</router-link>
-                <router-link to="/dayrec" active-class="is-active">每日推荐</router-link> -->
-            </div>
-
         </div>
         <div class="content-wrapper">
-            <!--MV开始 -->
+            <!--新品轮播图开始 -->
             <div class="content-section">
-                <div class="apps-card">
-                    <div class="block" v-for="item in songMV" @click="playMV(item.id)">
-                        <el-image class="app-card app-imgwithd" :src="item.cover"></el-image>
-                        <h5 class="songlisttext">{{item.name}}</h5>
-                    </div>
-                </div>
+              <el-carousel height="400px" direction="vertical" :autoplay="true">
+                <el-carousel-item v-for="item in newPro" :key="item">
+                  <h3 class="medium">{{ item }}</h3>
+                </el-carousel-item>
+              </el-carousel>
             </div>
-            <!-- MV结束 -->
+            <!-- 新品轮播图结束 -->
         </div>
 
-    </div>
     </div>
 </template>
 <script>
-    import { getnewMV } from '../request/api.js'
     export default {
         data() {
             return {
-                songMV: [],
+               newPro:['mlb','oioi','boy']
             }
-        },
-        created() {
-            this.showmv();
         },
         methods: {
-            showmv() {
-                getnewMV({}).then(res => {
-                    this.songMV = res.data.data;
-                    // console.log(this.songMV)
-                })
-            },
-            playMV(mvid, page = 1) {
-                this.$router.push({ path: '/playmv', query: { mvid: mvid } })
-            }
+
         },
     }
 </script>
-<style lang="">
-    .mvimg {
+<style>
+.mvimg {
         border-radius: 50%;
-    }
-
-    .app-mv {
+}
+.app-mv {
         padding: 15px;
     }
 
@@ -80,4 +58,19 @@
         font-weight: 500;
         cursor: pointer;
     }
+.el-carousel__item h3 {
+  color: #475669;
+  font-size: 14px;
+  opacity: 0.75;
+  line-height: 200px;
+  margin: 0;
+}
+
+.el-carousel__item:nth-child(2n) {
+  background-color: #99a9bf;
+}
+
+.el-carousel__item:nth-child(2n+1) {
+  background-color: #d3dce6;
+}
 </style>

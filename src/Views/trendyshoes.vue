@@ -1,8 +1,8 @@
-<template lang="">
+<template>
     <div class="main-container">
         <div class="main-header">
             <div class="main-header">
-                <a class="menu-link-main" href="#">潮流女鞋</a>
+                <a class="menu-link-main" href="#">潮鞋</a>
                 <div class="header-menu">
                     <!-- <router-link to="/" active-class="is-active">专辑</router-link>
                     <router-link to="/Leaderboard" active-class="is-active">排行榜</router-link>
@@ -65,5 +65,5 @@
     }
 </script>
 <style lang="">
- 
+
 </style>

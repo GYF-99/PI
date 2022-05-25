@@ -31,7 +31,12 @@
                     <el-row>
                       <el-col :span="8">
                         <el-card :body-style="{ padding: '0px' }" shadow="hover">
-                          <img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png" class="image">
+<!--                          <img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png" class="image">-->
+                          <el-image
+                            :src="url"
+                            :preview-src-list="srcList"
+                             class="image">
+                          </el-image>
                         </el-card>
                       </el-col>
                     </el-row>
@@ -158,7 +163,12 @@ export default {
         procount: 1,
         prosum: 199.99,
       }],
-      num:1
+      num:1,
+      url: 'https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png',
+      srcList: [
+        'https://fuss10.elemecdn.com/8/27/f01c15bb73e1ef3793e64e6b7bbccjpeg.jpeg',
+        'https://fuss10.elemecdn.com/1/8e/aeffeb4de74e2fde4bd74fc7b4486jpeg.jpeg'
+      ]
     }
   },
   props: {

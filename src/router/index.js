@@ -12,10 +12,8 @@ import thememarket from '../Views/thememarket.vue'
 import designerarea from '../Views/designerarea.vue'
 import Playlist from '../Views/PlaylistDetails.vue'
 import Leaderboard from '../Views/Leaderboard.vue'
-import newLeaderboard from '../Views/newLeaderboard.vue'
 // import singerlist from '../Views/singerlist.vue'
 import fashionclothing from '../Views/fashionclothing.vue'
-import trendfront from '../Views/trendfront.vue'
 import album from '../Views/album.vue'
 // import dayrec from '../Views/dayrec.vue'
 import todayhotstyle from '../Views/todayhotstyle.vue'
@@ -103,16 +101,6 @@ export default new Router({
       path: '/trendyshoes',
       name: 'trendyshoes',
       component: trendyshoes
-    },
-    {
-      path: '/newLeaderboard',
-      name: 'newLeaderboard',
-      component: newLeaderboard
-    },
-    {
-      path: '/trendfront',
-      name: 'trendfront',
-      component: trendfront
     },
     {
       path: '/goldlist',
