@@ -82,7 +82,7 @@ export default new Router({
     {
       path: '/Leaderboard',
       name: 'Leaderboard',
-      component: Leaderboard
+      component: Leaderboard,
     },
     {
       path: '/fashionclothing',

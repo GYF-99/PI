@@ -1,4 +1,4 @@
-<template lang="">
+<template>
     <div class="main-container">
         <div class="main-header">
             <div class="main-header">
@@ -6,8 +6,6 @@
                 <div class="header-menu">
                     <router-link to="/todayhotstyle" active-class="is-active">今日爆款</router-link>
                     <router-link to="/goldlist" active-class="is-active">好物金榜</router-link>
-                    <!-- <router-link to="/singerlist" active-class="is-active">关注</router-link>
-                    <router-link to="#" active-class="is-active">分类</router-link> -->
                 </div>
             </div>
         </div>
