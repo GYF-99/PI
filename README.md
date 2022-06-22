@@ -1,6 +1,4 @@
 # glasses
-testtest
-asfasfsda
 > A Vue.js project
 
 ## Build Setup
